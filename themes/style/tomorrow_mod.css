@@ -269,9 +269,10 @@ a {
   text-decoration: none;
 }
 
-section ul {
+section ul,
+section ol{
   list-style: none;
-  font-size: 2.5em;
+  font-size: 2em;
   text-transform: uppercase;
   font-weight: 700;
   color: #4271ae;
@@ -280,14 +281,9 @@ section ul {
 }
 
 section ol {
-  /* list-style: none; */
-  font-size: 2.5em;
   text-transform: none;
-  font-weight: 700;
-  /*color: #4271ae;*/
-  /*text-align: right;*/
-  margin-bottom: 1em;
   margin-left: 1em;
+  counter-reset: li;
 }
 
 section ul.variants {
@@ -296,7 +292,29 @@ section ul.variants {
 
 section ul.split > li {
   width: 47%;
-  list-style: square;
+}
+
+section ul > li,
+section ol > li {
+  text-indent: -0.9em;
+}
+
+section ol > li {
+  counter-increment: li;
+}
+
+section ul > li:before,
+section ol > li:before {
+  color: darkgoldenrod;
+  font-size: 1em;
+}
+
+section ul > li:before {
+  content: "\2023";
+}
+
+section ol > li:before {
+  content: counter(li)".";
 }
 
 section ul.split > li:nth-of-type(2n),
@@ -322,6 +340,11 @@ section ul.split > li:nth-of-type(1),
 section ul.split > li:nth-of-type(2) {
   list-style: none;
   text-align: center;
+}
+
+section ul.split > li:nth-of-type(1):before,
+section ul.split > li:nth-of-type(2):before {
+  content: "";
 }
 
 section .graffiti {
