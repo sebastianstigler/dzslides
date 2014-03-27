@@ -1,17 +1,16 @@
-/*
-Monokai style - ported by Luigi Maselli - http://grigio.org
+﻿/*
+
+Dark style from softwaremaniacs.org (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
+
 */
 
 .hljs {
   display: block; padding: 0.5em;
-  background: #272822;
+  background: #444;
 }
 
-.hljs-tag,
-.hljs-tag .hljs-title,
 .hljs-keyword,
 .hljs-literal,
-.hljs-strong,
 .hljs-change,
 .hljs-winutils,
 .hljs-flow,
@@ -19,43 +18,24 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
 .clojure .hljs-built_in,
 .nginx .hljs-title,
 .tex .hljs-special {
-  color: #F92672;
+  color: white;
 }
 
-.hljs {
+.hljs,
+.hljs-subst {
   color: #DDD;
 }
 
-.hljs .hljs-constant,
-.asciidoc .hljs-code {
-	color: #66D9EF;
-}
-
-.hljs-code,
-.hljs-class .hljs-title,
-.hljs-header {
-	color: white;
-}
-
-.hljs-link_label,
-.hljs-attribute,
-.hljs-symbol,
-.hljs-symbol .hljs-string,
-.hljs-value,
-.hljs-regexp {
-	color: #BF79DB;
-}
-
-.hljs-link_url,
-.hljs-tag .hljs-value,
 .hljs-string,
-.hljs-bullet,
-.hljs-subst,
 .hljs-title,
-.hljs-emphasis,
 .haskell .hljs-type,
+.ini .hljs-title,
+.hljs-tag .hljs-value,
+.css .hljs-rules .hljs-value,
 .hljs-preprocessor,
 .hljs-pragma,
+.ruby .hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
 .ruby .hljs-class .hljs-parent,
 .hljs-built_in,
 .sql .hljs-aggregate,
@@ -63,6 +43,7 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
 .django .hljs-variable,
 .smalltalk .hljs-class,
 .hljs-javadoc,
+.ruby .hljs-string,
 .django .hljs-filter .hljs-argument,
 .smalltalk .hljs-localvars,
 .smalltalk .hljs-array,
@@ -74,15 +55,13 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
 .apache .hljs-tag,
 .apache .hljs-cbracket,
 .tex .hljs-command,
-.hljs-prompt {
-  color: #A6E22E;
+.hljs-prompt,
+.coffeescript .hljs-attribute {
+  color: #D88;
 }
 
 .hljs-comment,
 .java .hljs-annotation,
-.smartquote,
-.hljs-blockquote,
-.hljs-horizontal_rule,
 .python .hljs-decorator,
 .hljs-template_comment,
 .hljs-pi,
@@ -91,15 +70,14 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
 .hljs-shebang,
 .apache .hljs-sqbracket,
 .tex .hljs-formula {
-  color: #75715E;
+  color: #777;
 }
 
 .hljs-keyword,
 .hljs-literal,
+.hljs-title,
 .css .hljs-id,
 .hljs-phpdoc,
-.hljs-title,
-.hljs-header,
 .haskell .hljs-type,
 .vbscript .hljs-built_in,
 .sql .hljs-aggregate,
