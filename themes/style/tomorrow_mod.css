@@ -36,7 +36,8 @@
 */
 
 html, .view body {
-  background: #8e908c url(images/White.jpg) repeat;
+  /*background: #8e908c url(images/White.jpg) repeat;*/
+  background: #000000;
   counter-reset: slideidx;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
@@ -45,9 +46,10 @@ body, .view section {
   background: #ffffff;
   font-size: 17px;
   line-height: 1;
-  -webkit-box-shadow: 8px 0 6px -3px #8c8c8c;
-     -moz-box-shadow: 8px 0 6px -3px #8c8c8c;
-          box-shadow: 8px 0 6px -3px #8c8c8c;
+  border-radius: 12px;
+  /*-webkit-box-shadow: 8px 0 6px -3px #8c8c8c;*/
+  /*   -moz-box-shadow: 8px 0 6px -3px #8c8c8c;*/
+  /*        box-shadow: 8px 0 6px -3px #8c8c8c;*/
 }
 
 section, .view head > title {
